@@ -1,0 +1,21 @@
+# Reversing a string using stack..
+def createStack():
+    stack = []
+    return stack
+
+def push(stack, item):
+    stack.append(item)
+    
+def sizeStack(stack):
+    return len(stack)
+    
+def isEmpty(stack):
+    if sizeStack(stack) == 0:
+        return True 
+    
+        
+def pop(stack):
+    if isEmpty():
+        return
+    else:
+        stack.pop()
