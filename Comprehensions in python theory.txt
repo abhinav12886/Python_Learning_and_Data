@@ -1,0 +1,62 @@
+# Comprehensions in python
+
+# 1. List comprehension:---
+
+# Syntax :- output_list = [output_exp for var in input_list if (var satisfies this condition)]
+
+# Example #1: Suppose we want to create an output list which contains only the even numbers
+# which are present in the input list.
+
+# input_list = [1, 2, 3, 4, 4, 5, 6, 7, 7]
+#
+#
+# list_using_comp = [var for var in input_list if var % 2 == 0]
+#
+# print("Output List using list comprehensions:", list_using_comp)
+
+
+# 2. dictionary Comprehension
+
+# Syntax:- output_dict = {key:value for (key, value) in iterable if (key, value satisfy this condition)}
+
+# Example #1: Suppose we want to create an output dictionary which contains only the odd numbers
+# that are present in the input list as keys and their cubes as values.
+
+# input_list = [1,2,3,4,5,6,7]
+#
+# dict_using_comp = {var:var ** 3 for var in input_list if var % 2 != 0}
+#
+# print("Output Dictionary using dictionary comprehensions:", dict_using_comp)
+
+
+# 3. Set Comprehensions:----
+
+# Syntax:- Set comprehensions are pretty similar to list comprehensions.
+
+# The only difference between them is that set comprehensions use curly brackets { }.
+# output_set = {output_exp for var in input_list if (var satisfies this condition)}
+
+# Example #1 : Suppose we want to create an output set which contains only the even numbers
+# that are present in the input list. Note that set will discard all the duplicate values.
+
+# input_list = [1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 7]
+#
+# set_using_comp = {var for var in input_list if var % 2 == 0}
+#
+# print("Output Set using set comprehensions:",
+#                               set_using_comp)
+
+# 4. generator comprehensions
+
+# Syntax:- Generator Comprehensions are very similar to list comprehensions. One difference between them is that
+
+# generator comprehensions use circular brackets whereas list comprehensions use square brackets.
+# output_gen = (output_exp for var in input_list if (var satisfies this condition))
+
+# input_list = [1, 2, 3, 4, 4, 5, 6, 7, 7]
+#   
+# output_gen = (var for var in input_list if var % 2 == 0)
+#   
+# print("Output values using generator comprehensions:", end = ' ')
+#   
+# for var in output_gen:print(var, end = ' ')
